@@ -15,8 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - name: Remove .extraheader from git config
-        run: git config --unset-all http.extraheader
       - uses: actions/checkout@v3
         with:
           submodules: true
