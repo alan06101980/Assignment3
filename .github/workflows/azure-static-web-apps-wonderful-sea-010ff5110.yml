@@ -21,6 +21,7 @@ jobs:
           clean: true
           submodules: true
           lfs: false
+          persist-credentials: false
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
